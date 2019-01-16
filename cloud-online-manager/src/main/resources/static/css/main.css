@@ -1,0 +1,417 @@
+html {
+    overflow-x: hidden;
+}
+.content-header {
+    position: relative;
+    padding: 0 0 3px 8px
+}
+[v-cloak] {
+    display: none;
+}
+body{
+	padding-right:0!important;
+}
+ul{
+	list-style:none;
+	padding:0;
+}
+.content-header > .breadcrumb {
+    position: relative;
+    top: 0;
+    right: 0;
+    float: none;
+    margin-top: 0px;
+    padding-left: 10px;
+    background: #ecf0f5;
+}
+.min-w120{
+min-width:120px;
+}
+.min-w180{
+	min-width:180px;
+}
+.cursorPointer{
+	color:#337ab7;
+	cursor:pointer;
+}
+.main-footer {
+    padding: 7px;
+    color: #444;
+    border-top: 1px solid #eee;
+}
+.pl15{
+	padding-left:15px;
+}
+.pr15{
+	padding-right:15px;
+}
+.mr30{
+	margin-right:30px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.fs20{
+	font-size:20px;
+}
+.colorWarning{
+	color:#ec971f;
+}
+.colorSuccess{
+	color:#5cb85c;
+}
+.colorDanger{
+	color:#d9534f;
+}
+.colorGray {
+	color: #616060;
+}
+
+.colorGrayText {
+	color: #c5bebe;
+}
+.colorHint{
+	color:#999;
+}
+.yy-overflowH {
+    overflow: hidden;
+}
+.wb100{
+	width:100%;
+}
+.in-block{
+ display: inline-block;
+} 
+.pt7{
+	padding:7px 0 0 0;
+}  
+.pl12{
+	padding:12px;
+}
+/* [v-cloak] {
+    display: none;
+} */
+
+.grid-btn {
+    margin-bottom: 12px;
+}
+
+.grid-btn .btn {
+    margin-right: 10px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.ml-10 {
+    margin-left: 0 !important;
+}
+
+@media (min-width: 768px) {
+    .ml-10 {
+        margin-left: 10px !important;
+    }
+
+   /*  .col-sm-10 {
+        width: 70%;
+        padding-left: 0px;
+    }
+
+    .col-sm-2 {
+        width: 24%;
+    } */
+}
+
+tbody > tr > th {
+    font-weight: normal;
+}
+
+.panel .table {
+    margin: 0 0;
+}
+
+.panel .pagination {
+    margin: 0;
+}
+
+.panel-default > .panel-heading {
+    background-color: #f5f5f5;
+}
+
+.row {
+    border-top: 1px solid #ddd;
+    margin: 0;
+    padding: 20px 2px 0px 2px;
+}
+
+.col-xs-6 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.form-horizontal .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.form-horizontal {
+    width: 550px;
+    padding-top: 20px;
+}
+
+#showCount {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 40px;
+
+}
+.pt15{
+	padding-top:15px;
+}
+.plr30{
+	padding:0 30px;
+}
+#showCount div {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+#jqGridPager .ui-pg-selbox {
+    outline: none;
+    border: 1px solid #333;
+}
+
+.yy-font-label label {
+    color: #999999;
+    font-weight: normal;
+}
+
+.yy-font-label input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.yy-font-label .title-style{
+	font-weight:700;
+	color:#333;
+}
+.yy-float {
+    float: left;
+}
+.p0 {
+    padding: 0;
+}
+.plr15{
+	padding:0 15px;
+}
+.pb15 {
+    padding-bottom: 15px;
+}
+.fw700{
+	font-weight:700 !important;
+}
+
+#jqGridPager .ui-pg-button {
+    opacity: 1;
+}
+
+#jqGridPager #input_jqGridPager input {
+    border: 1px solid #333;
+    text-align: center;
+    height: 22px;
+    line-height: 22px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+.mt15{
+	margin-top:15px;
+}
+.mb15{
+	margin-bottom:15px;
+}
+.mb0{
+	margin-bottom:0;
+}
+.yy-lh40 {
+    line-height: 40px;
+}
+.lh34{
+	line-height:34px;
+}
+#jqGrid {
+    width: 100%;
+}
+
+.tabLook{
+          padding:0 5px;
+          cursor:pointer;
+         }
+.clear-float:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0
+}
+.noData-icon{
+	color:#f0ad4e;
+}
+.okData-icon{
+	color:#5cb85c;
+}
+.clear-float {
+    zoom: 1
+}
+.detailToggle,.detailToggle2{
+	cursor:pointer;
+}
+.m0 {
+	margin: 0 !important;
+}
+#orderWrapper .form-group{
+	margin-bottom:15px;
+}
+.orderWrapper-time{
+	height:34px;
+}
+.h34{
+	height:34px;
+}
+.loginUser>li{
+        /*  height:167px; */
+        height:120px;
+        padding:15px;
+    }
+    /* 页面下拉样式 */
+    .btnWrap{
+   padding:0 15px;
+   height:34px;
+   line-height:34px;
+ }
+ .iconDown{
+ height:34px;
+ line-height:34px;
+  font-size:22px;
+  margin-right:15px;
+ }
+ .iconUp{
+  display: inline-block;
+    vertical-align: top;
+ }
+ .btnWrap-icon{
+ height:34px;
+  cursor:pointer;
+ }
+ @media (min-width: 100px){
+	.form-inline .form-group {
+	    display: inline-block;
+	    margin-bottom: 0;
+	    vertical-align: middle;
+	}
+ }
+   
+@media (min-width: 992px) {
+    .col-mdlg-5 {
+        float: left;
+        width: 20%;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+  
+}
+@media (max-width: 1200px){
+	.titleW{
+	  width:85px;
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+	  .loginUser>li{
+      padding:15px 50px;
+    }
+}
+@media screen and (max-width:992px) {
+	  .loginUser>li{
+      padding:15px 15px;
+    }
+}
+
+/* .form-horizontal{
+   width:100%;
+   padding-top:0;
+ } */
+  .iconwrap{
+            position: relative;
+        }
+       .showIcon{
+           position: absolute;
+           right: 20px;
+           top:-40px;
+           width:100px;
+           height: 100px;
+        }
+       .webuploader-pick{
+           width: 86px;
+           height:34px;
+           line-height: 34px;
+           padding: 0 !important
+       }
+
+        .webuploader-container {
+            position: relative;
+        }
+        .webuploader-element-invisible {
+            position: absolute !important;
+            clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+            clip: rect(1px,1px,1px,1px);
+        }
+        .webuploader-pick {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            background: #337ab7;
+            padding: 10px 15px;
+            color: #fff;
+            text-align: center;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .webuploader-pick-hover {
+            background: #337ab7;
+        }
+
+        .webuploader-pick-disable {
+            opacity: 0.6;
+            pointer-events:none;
+        }
+
+        .file-item .error {
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            background: red;
+            color: white;
+            text-align: center;
+            height: 20px;
+            font-size: 14px;
+            line-height: 23px;
+        }
+        .removeIcon{
+            margin-left: 75px;
+	       background-color: rgba( 0, 0, 0, 0.5 );
+	       color:#ffffff;
+	       cursor:pointer;
+       }
+       .thumbnail{
+        margin-bottom:0;
+       }
+       .iconWrap .info{
+         overflow:hidden;
+         white-space: nowrap;
+       }
+
