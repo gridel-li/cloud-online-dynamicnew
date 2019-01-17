@@ -16,6 +16,7 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
+        <module>cloud-online-core</module>
         <module>cloud-online-common</module>
         <module>cloud-online-utils</module>
         <module>cloud-online-service</module>
@@ -23,10 +24,7 @@
     </modules>
     <properties>
         <java.version>1.8</java.version>
-        <spring.boot.starter.data.jpa.version>2.1.2.RELEASE</spring.boot.starter.data.jpa.version>
-        <spring.boot.starter.data.neo4j.version>2.1.2.RELEASE</spring.boot.starter.data.neo4j.version>
-        <spring.boot.starter.data.rest.version>2.1.2.RELEASE</spring.boot.starter.data.rest.version>
-        <spring.boot.starter.tomcat.version>2.1.2.RELEASE</spring.boot.starter.tomcat.version>
+        <spring.boot.starter.version>2.1.2.RELEASE</spring.boot.starter.version>
         <mybatis.spring.boot.version>1.3.2</mybatis.spring.boot.version>
         <mysql.version>8.0.13</mysql.version>
         <commons.configuration.version>1.10</commons.configuration.version>
@@ -40,7 +38,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
-                <version>${spring.boot.starter.data.jpa.version}</version>
+                <version>${spring.boot.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
@@ -55,17 +53,17 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-neo4j</artifactId>
-                <version>${spring.boot.starter.data.neo4j.version}</version>
+                <version>${spring.boot.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-tomcat</artifactId>
-                <version>${spring.boot.starter.tomcat.version}</version>
+                <version>${spring.boot.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-rest</artifactId>
-                <version>${spring.boot.starter.data.rest.version}</version>
+                <version>${spring.boot.starter.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>
@@ -87,6 +85,21 @@
                 <groupId>commons-io</groupId>
                 <artifactId>commons-io</artifactId>
                 <version>${commons.io.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>${spring.boot.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-aop</artifactId>
+                <version>${spring.boot.starter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring.boot.starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -111,6 +124,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
     </dependencies>
 

@@ -5,6 +5,7 @@ import com.sgcc.zj.common.base.PageUtils;
 import com.sgcc.zj.common.base.Query;
 import com.sgcc.zj.common.base.R;
 import com.sgcc.zj.common.xss.XssHttpServletRequestWrapper;
+import com.sgcc.zj.core.aop.annotation.PGControllerMonitor;
 import com.sgcc.zj.service.generator.SysGeneratorService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,6 +32,7 @@ public class SysGeneratorController {
 	/**
 	 * 列表
 	 */
+	@PGControllerMonitor
 	@ResponseBody
 	@RequestMapping("/list")
 	public R list(@RequestParam Map<String, Object> params){
@@ -47,6 +49,7 @@ public class SysGeneratorController {
 	/**
 	 * 生成代码
 	 */
+	@PGControllerMonitor
 	@RequestMapping("/code")
 	public void code(HttpServletRequest request, HttpServletResponse response) throws IOException{
 		String[] tableNames = new String[]{};
