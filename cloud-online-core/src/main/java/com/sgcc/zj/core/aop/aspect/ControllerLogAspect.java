@@ -21,7 +21,6 @@ import java.util.Map;
 /**
  * @author liyingjie
  * @Title: ControllerLogAspect
- * @Description: 日志切面
  * @date 2019/1/17
  */
 @Aspect

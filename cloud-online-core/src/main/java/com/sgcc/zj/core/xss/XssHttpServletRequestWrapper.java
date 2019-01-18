@@ -1,4 +1,4 @@
-package com.sgcc.zj.common.xss;
+package com.sgcc.zj.core.xss;
 
 import org.apache.commons.lang.StringUtils;
 

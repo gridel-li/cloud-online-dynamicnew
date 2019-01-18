@@ -1,6 +1,6 @@
 package com.sgcc.zj.utils.generator;
 
-import com.sgcc.zj.common.exception.RRException;
+import com.sgcc.zj.core.exception.RRException;
 import com.sgcc.zj.utils.date.DateUtils;
 import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;

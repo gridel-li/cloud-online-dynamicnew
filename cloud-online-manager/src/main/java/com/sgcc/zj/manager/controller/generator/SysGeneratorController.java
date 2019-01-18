@@ -1,11 +1,11 @@
 package com.sgcc.zj.manager.controller.generator;
 
 import com.alibaba.fastjson.JSON;
-import com.sgcc.zj.common.base.PageUtils;
-import com.sgcc.zj.common.base.Query;
-import com.sgcc.zj.common.base.R;
-import com.sgcc.zj.common.xss.XssHttpServletRequestWrapper;
 import com.sgcc.zj.core.aop.annotation.PGControllerMonitor;
+import com.sgcc.zj.core.base.PageUtils;
+import com.sgcc.zj.core.base.Query;
+import com.sgcc.zj.core.base.R;
+import com.sgcc.zj.core.xss.XssHttpServletRequestWrapper;
 import com.sgcc.zj.service.generator.SysGeneratorService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.web.bind.annotation.RequestMapping;

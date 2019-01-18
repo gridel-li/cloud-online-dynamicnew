@@ -1,6 +1,6 @@
-package com.sgcc.zj.common.base;
+package com.sgcc.zj.core.base;
 
-import com.sgcc.zj.common.xss.SQLFilter;
+import com.sgcc.zj.core.xss.SQLFilter;
 import org.apache.commons.collections.MapUtils;
 
 import java.util.LinkedHashMap;

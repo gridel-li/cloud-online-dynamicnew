@@ -1,6 +1,6 @@
 package com.sgcc.zj.manager.controller.neo4j;
 
-import com.sgcc.zj.common.base.R;
+import com.sgcc.zj.core.base.R;
 import com.sgcc.zj.service.neo4j.ElementGraphService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

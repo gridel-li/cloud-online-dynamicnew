@@ -1,6 +1,6 @@
-package com.sgcc.zj.common.xss;
+package com.sgcc.zj.core.xss;
 
-import com.sgcc.zj.common.exception.RRException;
+import com.sgcc.zj.core.exception.RRException;
 import org.apache.commons.lang.StringUtils;
 
 /**

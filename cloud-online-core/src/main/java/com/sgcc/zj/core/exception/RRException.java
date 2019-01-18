@@ -1,4 +1,4 @@
-package com.sgcc.zj.common.exception;
+package com.sgcc.zj.core.exception;
 
 /**
  * 自定义异常

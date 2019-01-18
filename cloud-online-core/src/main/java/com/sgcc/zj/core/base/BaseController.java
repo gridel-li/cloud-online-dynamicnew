@@ -1,4 +1,4 @@
-package com.sgcc.zj.common.base;
+package com.sgcc.zj.core.base;
 
 import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.lang.StringUtils;

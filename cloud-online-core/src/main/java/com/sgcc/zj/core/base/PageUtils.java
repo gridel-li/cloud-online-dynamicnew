@@ -1,4 +1,4 @@
-package com.sgcc.zj.common.base;
+package com.sgcc.zj.core.base;
 
 import java.io.Serializable;
 import java.util.List;

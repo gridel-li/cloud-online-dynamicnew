@@ -1,4 +1,4 @@
-package com.sgcc.zj.common.xss;
+package com.sgcc.zj.core.xss;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
