@@ -1,5 +1,6 @@
 package com.sgcc.zj.manager.controller.neo4j;
 
+import com.sgcc.zj.core.aop.annotation.PGControllerMonitor;
 import com.sgcc.zj.core.base.R;
 import com.sgcc.zj.service.neo4j.ElementGraphService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +24,7 @@ public class GraphController {
     @Resource
     private ElementGraphService elementGraphService;
 
+    @PGControllerMonitor
     @GetMapping("/graph")
     public R graph(@RequestParam(value = "limit",required = false) Integer limit) {
         Map<String, Object> elements = elementGraphService.elementNodeGraph(limit == null ? 100 : limit);
