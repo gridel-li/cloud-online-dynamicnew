@@ -1,38 +1,22 @@
 package com.sgcc.zj.manager.config;
 
-import com.alibaba.druid.pool.DruidDataSource;
-import com.alibaba.druid.support.http.StatViewServlet;
-import com.alibaba.druid.support.http.WebStatFilter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.boot.web.servlet.ServletRegistrationBean;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-
-import javax.sql.DataSource;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * @author liyingjie
  * @Title: DruidConfig
  * @Description: druid配置
  * @date 2019/1/21
  */
-@Configuration
+/*@Configuration
 public class DruidConfiguration {
     private static final Logger logger = LoggerFactory.getLogger(DruidConfiguration.class);
 
     private static final String DB_PREFIX = "spring.datasource";
 
 
-    /**
+    *//**
      * @function 添加
      * @return
-     */
+     *//*
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource druid(){
@@ -40,9 +24,9 @@ public class DruidConfiguration {
     }
 
     //配置Druid的监控
-    /**
+    *//**
      * 1、配置一个管理后台的Servlet
-     */
+     *//*
     @Bean
     public ServletRegistrationBean statViewServlet(){
         logger.info("阿里 druid init");
@@ -57,9 +41,9 @@ public class DruidConfiguration {
         return bean;
     }
 
-    /**
+    *//**
      * 2、配置一个web监控的filter
-     */
+     *//*
     @Bean
     public FilterRegistrationBean webStatFilter(){
         FilterRegistrationBean bean = new FilterRegistrationBean();
@@ -70,4 +54,4 @@ public class DruidConfiguration {
         bean.setUrlPatterns(Arrays.asList("/*"));
         return  bean;
     }
-}
+}*/
