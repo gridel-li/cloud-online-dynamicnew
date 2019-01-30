@@ -56,11 +56,12 @@
                 <artifactId>spring-boot-starter-data-neo4j</artifactId>
                 <version>${spring.boot.starter.version}</version>
             </dependency>
-            <dependency>
+            <!--<dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-tomcat</artifactId>
                 <version>${spring.boot.starter.version}</version>
-            </dependency>
+                <scope>provided</scope>
+            </dependency>-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-rest</artifactId>
