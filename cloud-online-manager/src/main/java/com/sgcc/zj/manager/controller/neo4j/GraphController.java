@@ -3,10 +3,7 @@ package com.sgcc.zj.manager.controller.neo4j;
 import com.sgcc.zj.core.aop.annotation.PGControllerMonitor;
 import com.sgcc.zj.core.base.R;
 import com.sgcc.zj.service.neo4j.ElementGraphService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.Map;
@@ -24,6 +21,7 @@ public class GraphController {
     @Resource
     private ElementGraphService elementGraphService;
 
+    @CrossOrigin
     @PGControllerMonitor
     @GetMapping("/graph")
     public R graph(@RequestParam(value = "limit",required = false) Integer limit) {
