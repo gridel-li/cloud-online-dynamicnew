@@ -7,6 +7,7 @@ import com.sgcc.zj.core.base.Query;
 import com.sgcc.zj.core.base.R;
 import com.sgcc.zj.core.xss.XssHttpServletRequestWrapper;
 import com.sgcc.zj.service.generator.SysGeneratorService;
+import com.sgcc.zj.utils.http.HttpClientUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -42,7 +43,9 @@ public class SysGeneratorController {
 		int total = sysGeneratorService.queryTotal(query);
 		
 		PageUtils pageUtil = new PageUtils(list, total, query.getLimit(), query.getPage());
-		
+
+		System.out.println(HttpClientUtils.sendGet("http://127.0.0.1:8764/hello?name=ss"));
+
 		return R.ok().put("page", pageUtil);
 	}
 	

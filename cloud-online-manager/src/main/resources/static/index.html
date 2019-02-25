@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="../js/jquery-3.3.1.min.js"></script>
-    <script src="../js/cytoscape.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/cytoscape.js"></script>
     <style>
         #cy {
             width: 100%;
@@ -23,7 +23,7 @@
 <div id="cy"></div>
 <script>
 
-    $.get('/graph/graph', function(result) {
+    $.get('graph/graph', function(result) {
     var cy = cytoscape({
         container: document.getElementById('cy'),
         boxSelectionEnabled: true,

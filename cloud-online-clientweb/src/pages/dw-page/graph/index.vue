@@ -10,7 +10,7 @@
     import cytoscape from 'cytoscape'
     export default {
         mounted: function () {
-                $.get('http://127.0.0.1:9999/graph/graph', function(result) {
+                $.get('http://192.168.137.128:9999/graph/graph', function(result) {
                     var cy = cytoscape({
                         container: document.getElementById('cy'),
                         boxSelectionEnabled: true,
