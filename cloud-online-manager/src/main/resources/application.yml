@@ -61,7 +61,7 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml,classpath:mapper/**/*.xml
   type-aliases-package: com.sgcc.zj.common.entity
 
-#访问路径http://127.0.0.1:9999/mng/actuator/health等
+#访问路径http://127.0.0.1:9999/actuator/health等
 management:
   endpoints:
     web:
