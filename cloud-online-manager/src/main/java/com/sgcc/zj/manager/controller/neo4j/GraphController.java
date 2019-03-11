@@ -3,6 +3,9 @@ package com.sgcc.zj.manager.controller.neo4j;
 import com.sgcc.zj.core.aop.annotation.PGControllerMonitor;
 import com.sgcc.zj.core.base.R;
 import com.sgcc.zj.service.neo4j.ElementGraphService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -14,7 +17,7 @@ import java.util.Map;
  * @author: liyingjie
  * @create: 2019-01-11
  */
-
+@Api(value = "GraphController-API",description = "图谱controller")
 @RestController
 @RequestMapping("/graph")
 public class GraphController {
@@ -24,6 +27,8 @@ public class GraphController {
     @CrossOrigin
     @PGControllerMonitor
     @GetMapping("/graph")
+    @ApiOperation(value="根据需要的节点数获取neo4j数据", notes="根据url的limit数量来获取图谱json,limit 非必填 默认100")
+    @ApiImplicitParam(name = "limit", value = "节点数量", required = false, dataType = "Integer")
     public R graph(@RequestParam(value = "limit",required = false) Integer limit) {
         Map<String, Object> elements = elementGraphService.elementNodeGraph(limit == null ? 100 : limit);
         return R.ok().put("elements",elements);
