@@ -29,7 +29,7 @@
         <mysql.version>8.0.13</mysql.version>
         <commons.configuration.version>1.10</commons.configuration.version>
         <velocity.version>1.7</velocity.version>
-        <commons.io.version>2.5</commons.io.version>
+        <commons.io.version>2.7</commons.io.version>
         <fastjson.version>1.2.41</fastjson.version>
         <druid.spring.boot.starter.version>1.1.10</druid.spring.boot.starter.version>
     </properties>
